@@ -1,3 +1,4 @@
+const { application } = require('express');
 const mongoose = require('mongoose')
 
 const CustomerSchema = mongoose.Schema(
@@ -10,6 +11,5 @@ const CustomerSchema = mongoose.Schema(
         versionKey: false
     }
 )
-
 
 module.exports = mongoose.model('Customer', CustomerSchema);
