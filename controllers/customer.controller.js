@@ -6,7 +6,7 @@ exports.index = (req, res) => {
 
 exports.create = (req, res) => {
     const c = new customer(req.body)
-
+    
     c.save().then(data => {
         res.json(data)
     }).catch(err => {
